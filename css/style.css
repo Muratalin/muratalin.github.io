@@ -1,0 +1,240 @@
+html {
+	font-size: 10px;
+	font-family: 'Passion One', cursive;
+	color: #333;
+	background-color: #b9413a;
+}
+
+/* Styles for main screen */
+
+section#main {
+	height: 50vh;
+	background: url("../img/main-bg.png") no-repeat center top;
+	background-size: relative;
+	background-attachment: cover;
+	color: #e3e5ec;
+	text-align: center;
+}
+
+.main-header {
+	position: absolute;
+	left: 50%;
+	top: 45%;
+	transform: translateX(-50%) translateY(-50%);
+	background-color: #b9413a;
+	padding-right: 0.5rem;
+	padding-left: 0.5rem;
+
+}	
+.main-header h1 {
+	font-size: 6rem;
+	text-transform: uppercase;
+}
+
+.main-line{
+	height: 2px;
+	background-color: #e3e5ec;
+	width: 100%;
+	display: block;
+
+}
+
+section#info {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+
+}
+.players {
+	text-align: center;
+	font-weight: 700;
+	font-size: 3rem;
+	text-transform: uppercase;
+	color: #e3e5ec;
+}
+.info-works {
+	padding-top: 5rem;
+	padding-bottom: 7rem;
+}
+.info-box {
+	display: inline-block;
+	width: 20%;
+	text-align: center;
+}
+.info-box img {
+	width: 100%;
+	max-width: 150px;
+}
+.info-box a{
+	display: block;
+	text-align: center;
+	margin-top: 2rem;
+	color: #e3e5ec;
+	text-decoration: none;
+	font-size: 3rem;
+}
+
+.container {
+	font-size: 0;
+	width: 95%;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 20px;
+    height: 0;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.video-container iframe,  
+.video-container object,  
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 15%;
+    width: 70%;
+    height: 67.5%;
+}
+.video-line-top{
+	margin-bottom: 5rem;
+	height: 5px;
+	background-color: #e3e5ec;
+	width: 100%;
+	display: block;
+}
+.video-line-bot{
+	margin-top: 79rem;
+	height: 5px;
+	background-color: #e3e5ec;
+	width: 100%;
+	display: block;
+}
+
+
+footer {
+	text-align: center;
+	background-color: #b9413a;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	color: #e3e5ec;
+}
+footer a {
+	color: #e3e5ec;
+}
+.social-links, .footer-info, .best-team{
+	display: inline-block;
+	width: 33.33%;
+	vertical-align: top;
+}
+.footer-info , .social-links, .best-team {
+	font-size: 2rem;
+}
+.footer-head {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.social-links img {
+	width: 2rem;
+	height: 2rem;
+}
+
+
+.social-links .vk {
+	width: 1rem;	
+}
+.social-links a {
+	margin-left: 1rem;
+	margin-right: 1rem;
+	border: 1px solid #e3e5ec;
+	display: inline-block;
+	width: 6rem;
+	height: 6rem;
+	vertical-align: middle;
+	border-radius: 50%;
+	line-height: 6.5rem;
+}
+social-links a:hover {
+
+		color: #555;
+	background-color: #e3e5ec;
+	
+}
+
+
+
+.footer-btn {
+	display: inline-block;
+	padding: 1rem 2rem;
+	border: 3px solid #fff;
+	border-radius: 50px;
+	text-decoration: none;
+	-webkit-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.footer-btn:hover {
+		color: #555;
+		background-color: #fff;
+}
+
+
+
+@media (max-width: 768px) {
+	html {
+		font-size: 9px;
+	}
+	.container {
+		width: 95%;
+	}
+	.info-box, .footer-info, .social-links, .callback {
+		width: 100%;
+	}
+	.info-box {
+		margin-bottom: 5rem;	
+	}
+	.footer-info, .social-links, .callback {
+		margin-bottom: 5rem;
+	}
+
+	section#main {
+		background: url("../img/main-bg.png") no-repeat center top;
+		background-size: 250%;
+		background-attachment: cover;
+
+
+}
+
+@media (max-width: 480px) {
+	html {
+		font-size: 5px;
+	}
+	.main-header {
+		top: 40%
+	}
+	section#main {
+		background: url("../img/main-bg.png") no-repeat center top;
+		background-size: 250%;
+		background-attachment: cover;
+	}
+
+
+}
+
+@media (max-width: 900px) {
+	.info-box {
+		padding: 1rem;
+	}
+	.video-line-bot{
+		margin-top: 28rem;
+		height: 5px;
+		background-color: #fff;
+		width: 100%;
+		display: block;
+	}
+}
+
