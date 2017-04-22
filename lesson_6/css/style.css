@@ -1,0 +1,53 @@
+body {
+  background-color: #f3f5f7;
+}
+.container-main-text {
+  margin-top: 37px;
+}
+.main-text {
+  font-size: 30px;
+  font-family: "ArvoRegular";
+  color: #3b3f6a;
+  text-align: center;
+}
+.header-text {
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.block {
+  padding-bottom: 50px;
+}
+.ico {
+  height: 160px;
+}
+.text-hp p {
+  font-size: 18px;
+  font-family: "NotoSansRegular";
+  color: #686c8b;
+  text-align: center;
+}
+.text-hp h3 {
+  font-size: 24px;
+  font-family: "ArvoRegular";
+  color: #3b3f6a;
+  text-align: center;
+}
+/* Код для подключения шрифта в /css/stylename.css */
+@font-face {
+  font-family: "ArvoRegular";
+  src: url("../fonts/ArvoRegular/ArvoRegular.eot");
+  src: url("../fonts/ArvoRegular/ArvoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/ArvoRegular/ArvoRegular.woff") format("woff"), url("../fonts/ArvoRegular/ArvoRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "NotoSansRegular";
+  src: url("../fonts/NotoSansRegular/NotoSansRegular.eot");
+  src: url("../fonts/NotoSansRegular/NotoSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/NotoSansRegular/NotoSansRegular.woff") format("woff"), url("../fonts/NotoSansRegular/NotoSansRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
