@@ -21,16 +21,19 @@ body {
 .block {
   padding-bottom: 50px;
 }
+.block img {
+  margin: 0 auto;
+}
 .ico {
   height: 160px;
 }
-.text-hp p {
+.text-center p {
   font-size: 18px;
   font-family: "NotoSansRegular";
   color: #686c8b;
   text-align: center;
 }
-.text-hp h3 {
+.text-center h3 {
   font-size: 24px;
   font-family: "ArvoRegular";
   color: #3b3f6a;
