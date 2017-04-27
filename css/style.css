@@ -55,19 +55,17 @@ section#main {
 
 
 section#portfolio {
+
 	padding-top: 5rem;
 	padding-bottom: 5rem;
 
 	z-index: 0;
 	position: relative;
 
-}
-
-section#portfolio img {
+	img {
 		position: relative;
 	}
-
-section#portfolio p {
+	p {
 		font-size: 4rem;
 		line-height: 1.4;
 		position: relative;
@@ -75,6 +73,7 @@ section#portfolio p {
 		margin: 0 auto;
 		display: block;
 
+	}
 }
 
 
