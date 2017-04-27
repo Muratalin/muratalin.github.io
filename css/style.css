@@ -61,11 +61,12 @@ section#portfolio {
 	z-index: 0;
 	position: relative;
 
-	}
-	img {
+}
+
+section#portfolio img {
 		position: relative;
 	}
-	p {
+section#portfolio p {
 		font-size: 4rem;
 		line-height: 1.4;
 		position: relative;
@@ -73,7 +74,7 @@ section#portfolio {
 		margin: 0 auto;
 		display: block;
 
-	}
+}
 
 
 }
