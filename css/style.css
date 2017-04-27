@@ -61,6 +61,21 @@ section#portfolio {
 	z-index: 0;
 	position: relative;
 
+	}
+	img {
+		position: relative;
+	}
+	p {
+		font-size: 4rem;
+		line-height: 1.4;
+		position: relative;
+		z-index: 1;
+		margin: 0 auto;
+		display: block;
+
+	}
+
+
 }
 .portfolio-header {
 	text-align: center;
@@ -113,19 +128,6 @@ section#portfolio {
 	left: 0;
 	top: 0;
 
-}
-img {
-	position: relative;
-}
-p {
-	font-size: 4rem;
-	line-height: 1.4;
-	position: relative;
-	z-index: 1;
-	margin: 0 auto;
-	display: block;
-
-}
 
 
 
@@ -145,10 +147,10 @@ footer a {
 	vertical-align: top;
 }
 .footer-info , .social-links {
-	font-size: 0.8rem;
+	font-size: 1.5rem;
 }
 .footer-head {
-	font-size: 1.5rem;
+	font-size: 2rem;
 	margin-bottom: 1rem;
 }
 
