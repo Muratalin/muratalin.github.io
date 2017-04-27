@@ -1,4 +1,4 @@
- @main-bg: #2f2f2f;
+ @chat-color: rgb(255, 225, 62);
 
 a:hover,
 a:visited,
@@ -6,10 +6,11 @@ a:focus
 {
     text-decoration: none;
 }
-
+/****************** NAVIGATION ******************/
  nav {
     background-color: #fff;
     padding-top: 50px;
+    padding-bottom: 50px;
     img {
         margin-bottom: 13px;
         max-width: 100%;
@@ -36,9 +37,9 @@ a:focus
     }
     
     .navigation {
+        margin-left: -25px;
         ul {
             text-align: right;
-
             margin-top: 13px;
         }
         li {
@@ -58,19 +59,74 @@ a:focus
         }
     }
     .callback {
-        text-align: right;
+        li {
+            display: inline-block;
+        }
     }
     .contact {
-            font-size: 12px;
-            font-family: "Raleway";
-            color: rgb(32, 34, 66);
-            font-weight: 600;
+        text-align: right;
+        margin-left: -25px;
+        font-size: 12px;
+        font-family: "Raleway";
+        color: #3c3f68;
+        font-weight: 600;
+        margin-top: -15px;
+    }
+    
+    .chat {
+        font-size: 14px;
+        font-family: "Raleway";
+        color: rgb(32, 34, 66);
+        background-color: @chat-color;   
+        width: 122px;
+        height: 41px; 
+        display: block;
+        text-align: center;
+        padding-top: 9px;
+        margin-left: -20px;
+        margin-right: 11px;
+        &:hover {
+            background-color: darken(@chat-color, 30);
         }
+    }
 
-
+    .number {
+        font-size: 24px;
+        padding: 6px 11px 6px;
+        border-left: 1px solid #babbc4;
+        font-family: "Lato";
+        font-weight: 600;    
+    }
 
  }
 
+/****************** SECTION ******************/
+section {
+    background-color: #2f2f2f;
+    padding-top: 240px;
+
+    .main-text {
+        font-size: 48px;
+        font-family: "Rockwell";
+        color: rgb(255, 255, 255);
+        text-align: center;
+    }
+    .second-text {
+        font-size: 30px;
+        font-family: "Raleway";
+        color: rgb(255, 255, 255);
+        text-align: center;
+        margin-top: 45px;
+    }
+    .section-picture {
+        padding-top: 55px;
+        display: block;
+        margin: 0 auto;
+    }
+    .check-domain {
+        
+    }
+}
 
 
 
@@ -78,8 +134,7 @@ a:focus
 
 
 
-
- // Fonts
+ /****************** FONTS ******************/
 
  @font-face {
    font-family: 'Rockwell';

@@ -3,9 +3,11 @@ a:visited,
 a:focus {
   text-decoration: none;
 }
+/****************** NAVIGATION ******************/
 nav {
   background-color: #fff;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 nav img {
   margin-bottom: 13px;
@@ -28,6 +30,9 @@ nav .host {
   font-family: "Rockwell-Bold";
   color: #202242;
 }
+nav .navigation {
+  margin-left: -25px;
+}
 nav .navigation ul {
   text-align: right;
   margin-top: 13px;
@@ -46,15 +51,65 @@ nav .navigation li a {
 nav .navigation li a:hover {
   color: #ffe13e;
 }
-nav .callback {
-  text-align: right;
+nav .callback li {
+  display: inline-block;
 }
 nav .contact {
+  text-align: right;
+  margin-left: -25px;
   font-size: 12px;
   font-family: "Raleway";
+  color: #3c3f68;
+  font-weight: 600;
+  margin-top: -15px;
+}
+nav .chat {
+  font-size: 14px;
+  font-family: "Raleway";
   color: #202242;
+  background-color: #ffe13e;
+  width: 122px;
+  height: 41px;
+  display: block;
+  text-align: center;
+  padding-top: 9px;
+  margin-left: -20px;
+  margin-right: 11px;
+}
+nav .chat:hover {
+  background-color: #a48b00;
+}
+nav .number {
+  font-size: 24px;
+  padding: 6px 11px 6px;
+  border-left: 1px solid #babbc4;
+  font-family: "Lato";
   font-weight: 600;
 }
+/****************** SECTION ******************/
+section {
+  background-color: #2f2f2f;
+  padding-top: 240px;
+}
+section .main-text {
+  font-size: 48px;
+  font-family: "Rockwell";
+  color: #ffffff;
+  text-align: center;
+}
+section .second-text {
+  font-size: 30px;
+  font-family: "Raleway";
+  color: #ffffff;
+  text-align: center;
+  margin-top: 45px;
+}
+section .section-picture {
+  padding-top: 55px;
+  display: block;
+  margin: 0 auto;
+}
+/****************** FONTS ******************/
 @font-face {
   font-family: 'Rockwell';
   src: url('../fonts/RockwellStd.eot');
