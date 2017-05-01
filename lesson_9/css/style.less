@@ -1,131 +1,181 @@
- @chat-color: rgb(255, 225, 62);
-
-a:hover,
-a:visited,
-a:focus
-{
-    text-decoration: none;
+/********************** Basic Settings **********************/
+html {
+    font-size: 10px;
 }
-/****************** NAVIGATION ******************/
- nav {
-    background-color: #fff;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    img {
-        margin-bottom: 13px;
-        max-width: 100%;
-        height: auto;
-        margin-right: 7px;
-        position: absolute;
-    }
+body {
+    color: @dark-color;
+}
+/********************** Basic Fonts **********************/
+.reg {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
 
-    .shape {
-        text-align: left;
-    }
-    .maguwo {
-           font-size: 30px;
-           font-family: "Rockwell";
-           color: rgb(32, 34, 66);
-           margin-left: 45px;
+.semi {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
 
+.bold {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+.header-font {
+    font-family: 'Rockwell';
+    font-weight: normal;
+}
+
+.header-font-bold {
+    font-family: 'Rockwell';
+    font-weight: bold;
+}
+/********************** Color mixins **********************/
+@dark-color: rgb(32, 34, 66);
+@light-color: #ffe13e;
+@line-color: rgba(164, 164, 164, 0.1);
+@header-text-color: #fff;
+/********************** Header **********************/
+
+header {
+    height: 100vh;
+    min-height: 600px;
+    background: url(../img/main-bg.jpg)no-repeat center center;
+
+    background-size: cover;
+}
+
+.header {
+    &-top-block {
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        height: 11rem;
     }
-    .host {
-           font-size: 30px;
-           font-family: "Rockwell-Bold";
-           color: rgb(32, 34, 66);
-            
-    }
-    
-    .navigation {
-        margin-left: -25px;
-        ul {
-            text-align: right;
-            margin-top: 13px;
+    &-logo {
+        height: 11rem;
+        line-height: 11rem;
+        img {
+            vertical-align: middle;
         }
+        span {
+            .header-font;
+            font-size: 2rem;
+            margin-left: 1rem;
+            vertical-align: middle;
+        }
+    }
+    &-nav {
+        border-right: 1px solid @line-color ;
+        -webkit-margin-before: 0em;
+        -webkit-margin-after: 0em;
+        text-align: center;
+        height: 11rem;
+        line-height: 11rem;
         li {
-            display: inline-block;
-            margin-right: 37px;
             a {
-                font-size: 16px;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 700;
-                color: #3c3f68;
                 text-transform: uppercase;
-            }
+                color: @dark-color;
+                font-size: 1.5rem;
+                .reg;
 
+            }
             a:hover {
-                color: rgb(255, 225, 62);
+                color: @light-color;
+                text-decoration: none;
+                .bold;
+            }
+            display: inline-block;
+            margin: 0 1rem;
+        }
+    }
+
+    &-callback {
+        &_text {
+            p {
+                font-size: 1.2rem;
+                padding-top: 1rem;
             }
         }
-    }
-    .callback {
-        li {
+
+        &_btn {
             display: inline-block;
+            padding: 1rem 2.5rem;
+            margin-right: 2rem;
+            background-color: @light-color;
+            color: @dark-color;
+            .bold;
+        }
+
+        &_phone {
+            font-size: 2.3rem;
+            font-weight: bold;
+            color: @dark-color;
+            padding-left: 2rem;
+            border-left: 2px solid @line-color;
+        }
+        text-align: center;
+    }
+
+     &-text-block {
+        text-align: center;
+        padding-top: 10%;
+        color: @header-text-color;
+        h1 {
+            .header-font;
+            font-size: 4rem;
+            text-align: center;
+            margin-bottom: .2rem;
+        }
+        p {
+            font-size: 2rem;
+            .reg;
         }
     }
-    .contact {
-        text-align: right;
-        margin-left: -25px;
-        font-size: 12px;
-        font-family: "Raleway";
-        color: #3c3f68;
-        font-weight: 600;
-        margin-top: -15px;
+    &-main-img {
+        margin-top: 4rem;
     }
-    
-    .chat {
-        font-size: 14px;
-        font-family: "Raleway";
-        color: rgb(32, 34, 66);
-        background-color: @chat-color;   
-        width: 122px;
-        height: 41px; 
-        display: block;
+}
+
+.main {
+    &-form-block {
+        width: 50rem;
+        height:9rem;
+        margin: 2rem auto;
         text-align: center;
-        padding-top: 9px;
-        margin-left: -20px;
-        margin-right: 11px;
-        &:hover {
-            background-color: darken(@chat-color, 30);
-        }
+        padding-top: 2rem;
+        background-color: fadeout(@header-text-color, 50%);
+    }
+    &-form-input {
+        display: inline-block;
+        background-color: #fff;
+        padding: 1rem;
+        height: 5rem;
+        vertical-align: middle;
+        width: 40%;
+        border: none;
+        margin-right: -4px;
+    }
+    &-form-btn {
+        display: inline-block;
+        border: none;
+        background-color: @light-color;
+        color: #fff;
+        height: 5rem;
+        .bold;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
-    .number {
-        font-size: 24px;
-        padding: 6px 11px 6px;
-        border-left: 1px solid #babbc4;
-        font-family: "Lato";
-        font-weight: 600;    
-    }
+}
 
- }
-
-/****************** SECTION ******************/
-section {
-    background-color: #2f2f2f;
-    padding-top: 240px;
-
-    .main-text {
-        font-size: 48px;
-        font-family: "Rockwell";
-        color: rgb(255, 255, 255);
-        text-align: center;
-    }
-    .second-text {
-        font-size: 30px;
-        font-family: "Raleway";
-        color: rgb(255, 255, 255);
-        text-align: center;
-        margin-top: 45px;
-    }
-    .section-picture {
-        padding-top: 55px;
-        display: block;
-        margin: 0 auto;
-    }
-    .check-domain {
-        
-    }
+.input-addon {
+    display: inline-block;
+    background-color: @light-color;
+    height: 5rem;
+    width: 8rem;
+    vertical-align: middle;
+    margin-right: -3px;
+    line-height: 5rem;
+    .bold;
 }
 
 
@@ -134,28 +184,28 @@ section {
 
 
 
- /****************** FONTS ******************/
 
- @font-face {
-   font-family: 'Rockwell';
-   src: url('../fonts/RockwellStd.eot');
-   src: url('../fonts/RockwellStd.eot?#iefix') format('embedded-opentype'),
-     url('../fonts/RockwellStd.woff2') format('woff2'),
-     url('../fonts/RockwellStd.woff') format('woff'),
-     url('../fonts/RockwellStd.ttf') format('truetype'),
-     url('../fonts/RockwellStd.svg#RockwellStd') format('svg');
-   font-weight: normal;
-   font-style: normal;
- }
+/********************** Fonts load **********************/
+@font-face {
+    font-family: 'Rockwell';
+    src: url('../fonts/RockwellStd.eot');
+    src: url('../fonts/RockwellStd.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RockwellStd.woff2') format('woff2'),
+        url('../fonts/RockwellStd.woff') format('woff'),
+        url('../fonts/RockwellStd.ttf') format('truetype'),
+        url('../fonts/RockwellStd.svg#RockwellStd') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
- @font-face {
-   font-family: 'Rockwell-Bold';
-   src: url('../fonts/Rockwell-Bold.eot');
-   src: url('../fonts/Rockwell-Bold.eot?#iefix') format('embedded-opentype'),
-     url('../fonts/Rockwell-Bold.woff2') format('woff2'),
-     url('../fonts/Rockwell-Bold.woff') format('woff'),
-     url('../fonts/Rockwell-Bold.ttf') format('truetype'),
-     url('../fonts/Rockwell-Bold.svg#Rockwell-Bold') format('svg');
-   font-weight: bold;
-   font-style: normal;
- }
+@font-face {
+    font-family: 'Rockwell';
+    src: url('../fonts/Rockwell-Bold.eot');
+    src: url('../fonts/Rockwell-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Rockwell-Bold.woff2') format('woff2'),
+        url('../fonts/Rockwell-Bold.woff') format('woff'),
+        url('../fonts/Rockwell-Bold.ttf') format('truetype'),
+        url('../fonts/Rockwell-Bold.svg#Rockwell-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}

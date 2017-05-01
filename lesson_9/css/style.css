@@ -1,115 +1,167 @@
-a:hover,
-a:visited,
-a:focus {
-  text-decoration: none;
+/********************** Basic Settings **********************/
+html {
+  font-size: 10px;
 }
-/****************** NAVIGATION ******************/
-nav {
-  background-color: #fff;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-nav img {
-  margin-bottom: 13px;
-  max-width: 100%;
-  height: auto;
-  margin-right: 7px;
-  position: absolute;
-}
-nav .shape {
-  text-align: left;
-}
-nav .maguwo {
-  font-size: 30px;
-  font-family: "Rockwell";
-  color: #202242;
-  margin-left: 45px;
-}
-nav .host {
-  font-size: 30px;
-  font-family: "Rockwell-Bold";
+body {
   color: #202242;
 }
-nav .navigation {
-  margin-left: -25px;
+/********************** Basic Fonts **********************/
+.reg {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
 }
-nav .navigation ul {
-  text-align: right;
-  margin-top: 13px;
+.semi {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
 }
-nav .navigation li {
-  display: inline-block;
-  margin-right: 37px;
-}
-nav .navigation li a {
-  font-size: 16px;
+.bold {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  color: #3c3f68;
-  text-transform: uppercase;
 }
-nav .navigation li a:hover {
-  color: #ffe13e;
+.header-font {
+  font-family: 'Rockwell';
+  font-weight: normal;
 }
-nav .callback li {
+.header-font-bold {
+  font-family: 'Rockwell';
+  font-weight: bold;
+}
+/********************** Color mixins **********************/
+/********************** Header **********************/
+header {
+  height: 100vh;
+  min-height: 600px;
+  background: url(../img/main-bg.jpg) no-repeat center center;
+  background-size: cover;
+}
+.header-top-block {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  height: 11rem;
+}
+.header-logo {
+  height: 11rem;
+  line-height: 11rem;
+}
+.header-logo img {
+  vertical-align: middle;
+}
+.header-logo span {
+  font-family: 'Rockwell';
+  font-weight: normal;
+  font-size: 2rem;
+  margin-left: 1rem;
+  vertical-align: middle;
+}
+.header-nav {
+  border-right: 1px solid rgba(164, 164, 164, 0.1);
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  text-align: center;
+  height: 11rem;
+  line-height: 11rem;
+}
+.header-nav li {
   display: inline-block;
+  margin: 0 1rem;
 }
-nav .contact {
-  text-align: right;
-  margin-left: -25px;
-  font-size: 12px;
-  font-family: "Raleway";
-  color: #3c3f68;
-  font-weight: 600;
-  margin-top: -15px;
-}
-nav .chat {
-  font-size: 14px;
-  font-family: "Raleway";
+.header-nav li a {
+  text-transform: uppercase;
   color: #202242;
+  font-size: 1.5rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+.header-nav li a:hover {
+  color: #ffe13e;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+.header-callback {
+  text-align: center;
+}
+.header-callback_text p {
+  font-size: 1.2rem;
+  padding-top: 1rem;
+}
+.header-callback_btn {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  margin-right: 2rem;
   background-color: #ffe13e;
-  width: 122px;
-  height: 41px;
-  display: block;
+  color: #202242;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+.header-callback_phone {
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: #202242;
+  padding-left: 2rem;
+  border-left: 2px solid rgba(164, 164, 164, 0.1);
+}
+.header-text-block {
   text-align: center;
-  padding-top: 9px;
-  margin-left: -20px;
-  margin-right: 11px;
+  padding-top: 10%;
+  color: #fff;
 }
-nav .chat:hover {
-  background-color: #a48b00;
-}
-nav .number {
-  font-size: 24px;
-  padding: 6px 11px 6px;
-  border-left: 1px solid #babbc4;
-  font-family: "Lato";
-  font-weight: 600;
-}
-/****************** SECTION ******************/
-section {
-  background-color: #2f2f2f;
-  padding-top: 240px;
-}
-section .main-text {
-  font-size: 48px;
-  font-family: "Rockwell";
-  color: #ffffff;
+.header-text-block h1 {
+  font-family: 'Rockwell';
+  font-weight: normal;
+  font-size: 4rem;
   text-align: center;
+  margin-bottom: .2rem;
 }
-section .second-text {
-  font-size: 30px;
-  font-family: "Raleway";
-  color: #ffffff;
+.header-text-block p {
+  font-size: 2rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+.header-main-img {
+  margin-top: 4rem;
+}
+.main-form-block {
+  width: 50rem;
+  height: 9rem;
+  margin: 2rem auto;
   text-align: center;
-  margin-top: 45px;
+  padding-top: 2rem;
+  background-color: rgba(255, 255, 255, 0.5);
 }
-section .section-picture {
-  padding-top: 55px;
-  display: block;
-  margin: 0 auto;
+.main-form-input {
+  display: inline-block;
+  background-color: #fff;
+  padding: 1rem;
+  height: 5rem;
+  vertical-align: middle;
+  width: 40%;
+  border: none;
+  margin-right: -4px;
 }
-/****************** FONTS ******************/
+.main-form-btn {
+  display: inline-block;
+  border: none;
+  background-color: #ffe13e;
+  color: #fff;
+  height: 5rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.input-addon {
+  display: inline-block;
+  background-color: #ffe13e;
+  height: 5rem;
+  width: 8rem;
+  vertical-align: middle;
+  margin-right: -3px;
+  line-height: 5rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+/********************** Fonts load **********************/
 @font-face {
   font-family: 'Rockwell';
   src: url('../fonts/RockwellStd.eot');
@@ -118,7 +170,7 @@ section .section-picture {
   font-style: normal;
 }
 @font-face {
-  font-family: 'Rockwell-Bold';
+  font-family: 'Rockwell';
   src: url('../fonts/Rockwell-Bold.eot');
   src: url('../fonts/Rockwell-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Rockwell-Bold.woff2') format('woff2'), url('../fonts/Rockwell-Bold.woff') format('woff'), url('../fonts/Rockwell-Bold.ttf') format('truetype'), url('../fonts/Rockwell-Bold.svg#Rockwell-Bold') format('svg');
   font-weight: bold;
