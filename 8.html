@@ -3,11 +3,35 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+
+<style>
+	
+body, html {
+    height: 100%;
+    margin: 0;
+}
+body {
+	background: black;
+}
+.bg {
+    /* The image used */
+    background-image: url("img/	8.png");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+</style>
+
 </head>
 <body>
 
 
-
+<div class="bg"></div>
 <iframe src="dist/8.mp3" allow="autoplay" style="display:none" id="iframeAudio">
 </iframe> 
 
@@ -15,12 +39,7 @@
       <source src="dist/8.mp3">
     </audio>
 
-<script>
-	 var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-    if(!isChrome){
-      $('#iframeAudio').remove()
-    }
-</script>
+
 
 
 </body>
