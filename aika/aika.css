@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'Plasdrip';
+  src: url('plasdrip.ttf');
+}
+
+body {
+  background-color: black; 
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.human-heart {
+  margin: 5em;
+  animation: .8s infinite beatHeart;
+}
+
+@keyframes beatHeart {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  40% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.text {
+    height: 200px;
+    width: 400px;
+    background: black;
+    color: red;
+    font-size: 50px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: 0px;
+    margin-left: -160px;
+    font-family: "Plasdrip";
+}
